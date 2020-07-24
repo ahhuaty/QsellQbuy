@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\shared",
+    "\\src\\pages",
+    "\\src\\pages\\cart",
+    "\\src\\pages\\store",
+    "\\src\\routes"
+  ],
+  "SelectedNode": "\\src\\components\\shared\\footer.js",
+  "PreviewInSolutionExplorer": false
+}
