@@ -6,9 +6,8 @@
     "\\src\\components\\shared",
     "\\src\\pages",
     "\\src\\pages\\cart",
-    "\\src\\pages\\store",
-    "\\src\\routes"
+    "\\src\\pages\\store"
   ],
-  "SelectedNode": "\\src\\components\\shared\\footer.js",
+  "SelectedNode": "\\src\\pages\\About.js",
   "PreviewInSolutionExplorer": false
 }
