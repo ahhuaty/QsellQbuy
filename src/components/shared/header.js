@@ -9,6 +9,7 @@ const Header = (props) => {
     const {itemCount} = useContext(CartContext);
     const [loginDialogOpen, setLoginDialogOpen] = useState(false);
 	const {isLoggedIn, onLogout, onLogin} = props;
+	const user = JSON.parse(localStorage.getItem("user"));
 	const cartInfo = isLoggedIn 
 		? <Link to='/cart'> <CartIcon/> Cart ({itemCount})</Link>
 		: <Link onClick={() => setLoginDialogOpen(true)}>Log in</Link>;
@@ -20,6 +21,7 @@ const Header = (props) => {
             <Link to='/'>Store</Link>
             <Link to='/about'>About</Link>
 			{cartInfo}
+			<span>{user === null ? "" : user.name}</span>
 			{logout}
 			<LoginDialog
 				open={loginDialogOpen}
