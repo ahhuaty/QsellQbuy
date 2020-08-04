@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet-async';
 import 'bootswatch/dist/lux/bootstrap.css'
 
 const Layout = ({title, description, children}) => {
-	const [isLoggedIn, setIsLoggedIn] = useState(false);
+	const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("user") !== null);
     return ( 
         <>
         <Helmet>
@@ -17,9 +17,16 @@ const Layout = ({title, description, children}) => {
         </Helmet>
         <Header
             isLoggedIn={isLoggedIn}
-            onLogout={() => setIsLoggedIn(false)}
-            onLogin={() => api.login(() => setIsLoggedIn(true), msg => {
+            onLogout={() => {
+                localStorage.removeItem("user")
+                setIsLoggedIn(false);
+            }}
+            onLogin={() => api.login(msg => {
+                localStorage.setItem("user", msg);
+                setIsLoggedIn(true);
+            }, msg => {
                 alert(msg);
+                localStorage.removeItem("user");
                 setIsLoggedIn(false)
             })}
         />
