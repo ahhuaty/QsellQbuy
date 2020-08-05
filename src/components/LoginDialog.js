@@ -11,13 +11,16 @@ export function LoginDialog(props) {
                     Please login with your username and password.
                 </DialogContentText>
                 <TextField
+					required
                     autoFocus
                     fullWidth
                     label="Username"
                 />
                 <TextField
                     fullWidth
+					required
                     label="Password"
+					type="password"
                 />
             </DialogContent>
             <DialogActions>

@@ -12,28 +12,39 @@ export function SignupDialog(props) {
                 </DialogContentText>
                 <TextField
                     autoFocus
+					required
                     fullWidth
                     label="Username"
                 />
                 <TextField
+					required
                     fullWidth
                     label="Password"
+					type="password"
                 />
 				<TextField
+					required
                     fullWidth
                     label="Confirm Password"
+					type="password"
                 />
 				<TextField
+					required
                     fullWidth
                     label="Contact"
                 />
 				<TextField
+					required
                     fullWidth
                     label="E-mail"
                 />
 				<TextField
                     fullWidth
                     label="Address"
+                />
+				<TextField
+                    fullWidth
+                    label="Referral Code"
                 />
             </DialogContent>
             <DialogActions>
