@@ -15,7 +15,7 @@ const Header = (props) => {
 		: <Link onClick={() => setLoginDialogOpen(true)}>Log in</Link>;
 	const logout = isLoggedIn
 		? <Link onClick={onLogout}>Log out</Link>
-		: null;
+		: <Link to='/signup'>Signup</Link>;
     return ( 
         <header className={styles.header}>
             <Link to='/'>Store</Link>
