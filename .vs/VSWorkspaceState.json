@@ -3,11 +3,8 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\shared",
-    "\\src\\pages",
-    "\\src\\pages\\cart",
-    "\\src\\pages\\store"
+    "\\src\\components\\shared"
   ],
-  "SelectedNode": "\\src\\pages\\About.js",
+  "SelectedNode": "\\src\\components\\LoginDialog.js",
   "PreviewInSolutionExplorer": false
 }
