@@ -52,7 +52,7 @@ export function SignupDialog(props) {
                     Cancel
                 </Button>
                 <Button onClick={handleLogin} color="primary">
-                    Login
+                    Signup
                 </Button>
             </DialogActions>
         </Dialog>

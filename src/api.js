@@ -3,7 +3,7 @@ const apiHost = "https://api.qsellqbuy.com";
 const loginResponse = {
 	"response": "ok",
 	"message": {
-		"name": "Sionggo Japit",
+		"name": "Sionggo-Japit",
 		"address": "Jurong West Street 73",
 		"token": "raw0r9e7ayifuhari",
 	}
