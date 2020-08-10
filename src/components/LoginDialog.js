@@ -1,6 +1,6 @@
 import React from "react";
 import { Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, TextField, Button} from "@material-ui/core";
-
+//LoginDialog
 export function LoginDialog(props) {
     const {open, handleClose, handleLogin} = props;
     return (
